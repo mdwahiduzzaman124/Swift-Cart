@@ -40,14 +40,13 @@
               <li>
                 <a
                   href=""
-                  class="text-xl font-medium text-[#503af6] hover:text-gray-600"
+                  class="text-xl font-medium"
+                  onclick="homePage()"
                   >Home</a
                 >
               </li>
-              <li>
-                <a href="" class="text-xl font-medium hover:text-[#503af6]"
-                  >Products</a
-                >
+              <li onclick="ShowAllProducts()">
+                <a class="text-xl font-medium hover:text-[#503af6]">Products</a>
               </li>
               <li>
                 <a href="" class="text-xl font-medium hover:text-[#503af6]"
@@ -88,14 +87,12 @@
               class="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 z-1 w-52 p-2 shadow absolute right-1"
             >
               <li>
-                <a
-                  href=""
-                  class="text-xl font-medium text-[#503af6] hover:text-gray-600"
+                <a href="" class="text-xl font-medium" onclick="homePage()"
                   >Home</a
                 >
               </li>
-              <li>
-                <a href="" class="text-xl font-medium">Products</a>
+              <li onclick="ShowAllProducts()">
+                <a class="text-xl font-medium">Products</a>
               </li>
               <li>
                 <a href="" class="text-xl font-medium">About</a>
@@ -108,7 +105,7 @@
         </div>
       </nav>
       <!-- Banner or Hero section -->
-      <section>
+      <section id="banner" class="">
         <div>
           <div
             class="h-[600px] w-full bg-[url(./Assets/banner-image.png)] bg-no-repeat bg-cover bg-center relative"
@@ -139,102 +136,209 @@
       </section>
     </header>
     <main>
-      <!-- Features section -->
-      <section class="bg-gray-100">
-        <div
-          class="text-center pt-12 flex flex-col justify-center items-center"
-        >
-          <h1 class="text-4xl font-extrabold pb-5">Why Choose Us</h1>
-          <p class="text-base font-normal text-gray-400 w-80 md:w-full">
-            we provide the best shopping experience with top-notch service.
-          </p>
-        </div>
-        <!-- Cards -->
-        <div
-          class="mt-[100px] flex flex-wrap justify-center items-center gap-14 pb-12 px-2"
-        >
+      <!-- Section 1 for Home Page -->
+      <section id="home" class="">
+        <!-- Features section -->
+        <section class="bg-gray-100">
           <div
-            class="max-w-[400px] h-[195px] lg:w-[282px] lg:h-[217px] bg-white rounded-xl px-7"
+            class="text-center pt-12 flex flex-col justify-center items-center"
           >
-            <div
-              class="w-16 h-16 border-4 border-solid border-white flex items-center justify-center bg-[#eef2ff] rounded-md relative bottom-6 shadow"
-            >
-              <div>
-                <i class="fa-solid fa-truck text-[#4f39f6] text-2xl"></i>
-              </div>
-            </div>
-            <h3 class="text-lg font-semibold py-4">Fast delivery</h3>
-            <p class="text-base font-medium text-gray-400">
-              Get your orders delivered to your doorstep quickly and efficiently
+            <h1 class="text-4xl font-extrabold pb-5">Why Choose Us</h1>
+            <p class="text-base font-normal text-gray-400 w-80 md:w-full">
+              we provide the best shopping experience with top-notch service.
             </p>
           </div>
+          <!-- Cards -->
           <div
-            class="max-w-[400px] h-[195px] lg:w-[282px] lg:h-[217px] bg-white rounded-xl px-7"
+            class="mt-[100px] flex flex-wrap justify-center items-center gap-14 pb-12 px-2"
           >
             <div
-              class="w-16 h-16 border-4 border-solid border-white flex items-center justify-center bg-[#eef2ff] rounded-md relative bottom-6 shadow"
+              class="max-w-[400px] h-[195px] lg:w-[282px] lg:h-[217px] bg-white rounded-xl px-7"
             >
-              <div>
-                <i class="fa-solid fa-headphones text-[#4f39f6] text-2xl"></i>
+              <div
+                class="w-16 h-16 border-4 border-solid border-white flex items-center justify-center bg-[#eef2ff] rounded-md relative bottom-6 shadow"
+              >
+                <div>
+                  <i class="fa-solid fa-truck text-[#4f39f6] text-2xl"></i>
+                </div>
               </div>
+              <h3 class="text-lg font-semibold py-4">Fast delivery</h3>
+              <p class="text-base font-medium text-gray-400">
+                Get your orders delivered to your doorstep quickly and
+                efficiently
+              </p>
             </div>
-            <h3 class="text-lg font-semibold py-4">24/7 Support</h3>
-            <p class="text-base font-medium text-gray-400">
-              Our support team is available around the clock to assist you.
-            </p>
-          </div>
-          <div
-            class="max-w-[400px] h-[195px] lg:w-[282px] lg:h-[217px] bg-white rounded-xl px-7"
-          >
             <div
-              class="w-16 h-16 border-4 border-solid border-white flex items-center justify-center bg-[#eef2ff] rounded-md relative bottom-6 shadow"
+              class="max-w-[400px] h-[195px] lg:w-[282px] lg:h-[217px] bg-white rounded-xl px-7"
             >
-              <div>
-                <i
-                  class="fa-solid fa-shield-halved text-[#4f39f6] text-2xl"
-                ></i>
+              <div
+                class="w-16 h-16 border-4 border-solid border-white flex items-center justify-center bg-[#eef2ff] rounded-md relative bottom-6 shadow"
+              >
+                <div>
+                  <i class="fa-solid fa-headphones text-[#4f39f6] text-2xl"></i>
+                </div>
               </div>
+              <h3 class="text-lg font-semibold py-4">24/7 Support</h3>
+              <p class="text-base font-medium text-gray-400">
+                Our support team is available around the clock to assist you.
+              </p>
             </div>
-            <h3 class="text-lg font-semibold py-4">Secure Payment</h3>
-            <p class="text-base font-medium text-gray-400">
-              Experience safe and secure transactions with our encrypted payment
-              systems.
-            </p>
-          </div>
-          <div
-            class="max-w-[400px] h-[195px] lg:w-[282px] lg:h-[217px] bg-white rounded-xl px-7"
-          >
             <div
-              class="w-16 h-16 border-4 border-solid border-white flex items-center justify-center bg-[#eef2ff] rounded-md relative bottom-6 shadow"
+              class="max-w-[400px] h-[195px] lg:w-[282px] lg:h-[217px] bg-white rounded-xl px-7"
             >
-              <div>
-                <i
-                  class="fa-solid fa-arrows-rotate text-[#4f39f6] text-2xl"
-                ></i>
+              <div
+                class="w-16 h-16 border-4 border-solid border-white flex items-center justify-center bg-[#eef2ff] rounded-md relative bottom-6 shadow"
+              >
+                <div>
+                  <i
+                    class="fa-solid fa-shield-halved text-[#4f39f6] text-2xl"
+                  ></i>
+                </div>
               </div>
+              <h3 class="text-lg font-semibold py-4">Secure Payment</h3>
+              <p class="text-base font-medium text-gray-400">
+                Experience safe and secure transactions with our encrypted
+                payment systems.
+              </p>
             </div>
-            <h3 class="text-lg font-semibold py-4">Easy Returns</h3>
-            <p class="text-base font-medium text-gray-400">
-              Not satisfied? Return your products easily within 30 days.
-            </p>
+            <div
+              class="max-w-[400px] h-[195px] lg:w-[282px] lg:h-[217px] bg-white rounded-xl px-7"
+            >
+              <div
+                class="w-16 h-16 border-4 border-solid border-white flex items-center justify-center bg-[#eef2ff] rounded-md relative bottom-6 shadow"
+              >
+                <div>
+                  <i
+                    class="fa-solid fa-arrows-rotate text-[#4f39f6] text-2xl"
+                  ></i>
+                </div>
+              </div>
+              <h3 class="text-lg font-semibold py-4">Easy Returns</h3>
+              <p class="text-base font-medium text-gray-400">
+                Not satisfied? Return your products easily within 30 days.
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
+        <!-- Trending Now Section -->
+        <section>
+          <div class="px-5 md:px-64 mt-8 md:mt-24">
+            <div>
+              <h2 class="text-3xl font-bold">Trending Now</h2>
+            </div>
+          </div>
+          <!-- Products card -->
+          <div
+            id="productCard-container"
+            class="mt-10 flex flex-wrap justify-evenly items-center lg:max-w-7xl mx-auto"
+          ></div>
+        </section>
       </section>
-      <!-- Trending Now Section -->
-      <section>
-        <div class="px-5 md:px-64 mt-8 md:mt-24">
-          <div>
-            <h2 class="text-3xl font-bold">Trending Now</h2>
+      <!-- section 2 for Products -->
+      <section class="hidden" id="section-2">
+        <div>
+          <h1 class="text-3xl font-bold text-center my-12">Our Products</h1>
+          <div
+            id="category-buttons"
+            class="flex justify-center items-center gap-3 flex-wrap"
+          >
+            <button
+              id="all-button"
+              class="text-xl font-normal border border-gray-300 btn rounded-3xl px-5 py-3"
+            >
+              All
+            </button>
+            <button
+              class="text-xl font-normal border border-gray-300 btn rounded-3xl px-5 py-3"
+            >
+              Electronics
+            </button>
+            <button
+              class="text-xl font-normal border border-gray-300 btn rounded-3xl px-5 py-3"
+            >
+              Jewelry
+            </button>
+            <button
+              class="text-xl font-normal border border-gray-300 btn rounded-3xl px-5 py-3"
+            >
+              Men's Clothing
+            </button>
+            <button
+              class="text-xl font-normal border border-gray-300 btn rounded-3xl px-5 py-3"
+            >
+              Women's Clothing
+            </button>
           </div>
         </div>
-        <!-- Products card -->
+        <!-- Show all products -->
         <div
-          id="productCard-container"
-          class="mt-10 flex flex-wrap justify-evenly items-center"
+          id="all-products"
+          class="grid grid-cols-1 justify-items-center lg:grid-cols-4 lg:max-w-7xl mx-auto gap-5 my-12 max-sm:max-w-lg"
         ></div>
       </section>
     </main>
-    <footer></footer>
+    <footer
+      class="flex max-sm:flex-col lg:justify-between lg:items-center bg-[#1e2939] text-base-content p-10 text-[#ccd1d8] lg:px-48 lg:mt-12"
+    >
+      <div>
+        <h3 class="text-3xl font-bold text-[#7c86ff] pb-7">SwiftCart</h3>
+        <p class="w-full lg:w-80 text-[#818a98]">
+          Your one-stop shop for all your fashion and lifestyle needs. Quality
+          products, fast delivery, and excellent support.
+        </p>
+      </div>
+      <div class="max-sm:pt-5">
+        <ul class="flex flex-col gap-2">
+          <li><a href="" class="footer-title">QUICK LINKS</a></li>
+          <li><a href="">Home</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <div class="max-sm:pt-4">
+        <ul class="flex flex-col gap-2">
+          <li><a href="" class="footer-title">Support</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Shipping</a></li>
+          <li><a href="">Returns</a></li>
+          <li><a href="">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="max-sm:pt-5">
+        <h1 class="footer-title">SUBSCRIBE TO OUR NEWSLETTER</h1>
+        <p class="text-lg font-normal lg:w-[350px]">
+          The latest news, articles, and resources, sent to your inbox weekly.
+        </p>
+        <div class="flex max-sm:flex-col gap-2 mt-3">
+          <input
+            type="text"
+            placeholder="Enter your email"
+            class="input max-sm:w-full text-gray-500"
+          />
+          <button class="btn btn-primary">Subscribe</button>
+        </div>
+      </div>
+    </footer>
+    <footer
+      class="flex max-sm:flex-col-reverse max-sm:gap-3 justify-between items-center lg:pt-5 bg-[#1e2939] text-base-content py-4 text-[#818a98] lg:px-48"
+    >
+      <aside class="">
+        <p>
+          <i class="fa-regular fa-copyright"></i> 2025 SwiftCart, Inc. All
+          rights reserved.
+        </p>
+      </aside>
+      <nav class="">
+        <div class="flex gap-2">
+          <div><i class="fa-brands fa-facebook text-2xl"></i></div>
+          <div><i class="fa-brands fa-square-twitter text-2xl"></i></div>
+          <div><i class="fa-brands fa-square-instagram text-2xl"></i></div>
+          <div><i class="fa-brands fa-square-linkedin text-2xl"></i></div>
+          <div><i class="fa-solid fa-envelope text-2xl"></i></div>
+        </div>
+      </nav>
+    </footer>
     <!-- Scripts -->
     <script src="./Scripts/main.js"></script>
   </body>
