@@ -38,10 +38,7 @@
           <div class="hidden lg:flex">
             <ul class="menu menu-horizontal">
               <li>
-                <a
-                  href=""
-                  class="text-xl font-medium"
-                  onclick="homePage()"
+                <a href="" class="text-xl font-medium" onclick="homePage()"
                   >Home</a
                 >
               </li>
@@ -270,12 +267,38 @@
             </button>
           </div>
         </div>
+        <!-- Load products with Categories -->
         <!-- Show all products -->
         <div
           id="all-products"
           class="grid grid-cols-1 justify-items-center lg:grid-cols-4 lg:max-w-7xl mx-auto gap-5 my-12 max-sm:max-w-lg"
         ></div>
       </section>
+      <!-- Modal section -->
+      <!-- Open the modal using ID.showModal() method -->
+      <dialog id="show_details_button" class="modal">
+        <div class="modal-box">
+          <div id="product_photo" class="flex justify-center items-center mb-3">
+            
+          </div>
+          <h3 id="product_title" class="text-lg font-bold">Hello!</h3>
+          <p id="product_description" class="py-4">Press ESC key or click the button below to close</p>
+          <div class="flex justify-evenly items-center">
+            <div id="product_price"></div>
+            <div id="product_rating"></div>
+          </div>
+          <div class="flex justify-evenly items-center gap-5 mt-6">
+            <button class="btn btn-success flex-1 rounded-xl shadow-none">Buy Now</button>
+            <button class="btn btn-warning flex-1 rounded-xl shadow-none"><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+          </div>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </main>
     <footer
       class="flex max-sm:flex-col lg:justify-between lg:items-center bg-[#1e2939] text-base-content p-10 text-[#ccd1d8] lg:px-48 lg:mt-12"
